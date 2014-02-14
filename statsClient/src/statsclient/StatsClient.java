@@ -48,7 +48,7 @@ public class StatsClient {
         public void run() {
                 try{
                  //Socket sckt=new Socket("localhost",21500);
-                 Socket sckt = new Socket("37.187.85.209",21500);
+                 Socket sckt = new Socket("ip",21500);
 
                  //Socket sckt = new Socket(“siteadı.com.tr”,portNo);
                  DataInputStream frServer=new DataInputStream(sckt.getInputStream());
@@ -108,7 +108,7 @@ public class StatsClient {
         public void run() {
                 try{
                  //Socket sckt=new Socket("localhost",21500);
-                 Socket sckt = new Socket("37.187.85.209",21500);
+                 Socket sckt = new Socket("ip",21500);
                  //Socket sckt = new Socket(“siteadı.com.tr”,portNo);
                  DataInputStream frServer=new DataInputStream(sckt.getInputStream());
                  DataOutputStream toServer=new DataOutputStream(sckt.getOutputStream());
@@ -118,7 +118,7 @@ public class StatsClient {
                          //yarıçapı Server a gönderiyoruz…
                          toServer.writeUTF("istek 2");//ÖNCEKİ VERİLERİ SİL APPEND ET
                          toServer.flush();
-                         File file = new File("/home/admin/sampforum/st/scores.dat"); 
+                         File file = new File("datFile"); 
                          FileWriter fw = new FileWriter(file.getAbsoluteFile());
                          BufferedWriter bw = new BufferedWriter(fw);
                          bw.write("");
@@ -179,7 +179,7 @@ public class StatsClient {
         public void run() {
                 try{
                  //Socket sckt=new Socket("localhost",21500);
-                 Socket sckt = new Socket("37.187.85.209",21500);
+                 Socket sckt = new Socket("ip",21500);
                  //Socket sckt = new Socket(“siteadı.com.tr”,portNo);
                  DataInputStream frServer=new DataInputStream(sckt.getInputStream());
                  DataOutputStream toServer=new DataOutputStream(sckt.getOutputStream());
@@ -250,7 +250,7 @@ public class StatsClient {
         public void run() {
                 try{
                  //Socket sckt=new Socket("localhost",21500);
-                 Socket sckt = new Socket("37.187.85.209",21500);
+                 Socket sckt = new Socket("ip",21500);
                  //Socket sckt = new Socket(“siteadı.com.tr”,portNo);
                  DataInputStream frServer=new DataInputStream(sckt.getInputStream());
                  DataOutputStream toServer=new DataOutputStream(sckt.getOutputStream());
