@@ -189,7 +189,7 @@ public class StatsClient {
                          //yarıçapı Server a gönderiyoruz…
                          toServer.writeUTF("istek 3");//ÖNCEKİ VERİLERİ SİL APPEND ET
                          toServer.flush();
-                         File file = new File("/home/admin/sampforum/st/money.dat"); 
+                         File file = new File("datfile"); 
                          FileWriter fw = new FileWriter(file.getAbsoluteFile());
                          BufferedWriter bw = new BufferedWriter(fw);
                          bw.write("");
@@ -260,7 +260,7 @@ public class StatsClient {
                          //yarıçapı Server a gönderiyoruz…
                          toServer.writeUTF("istek 4");//ÖNCEKİ VERİLERİ SİL APPEND ET
                          toServer.flush();
-                         File file = new File("/home/admin/sampforum/st/online.dat"); 
+                         File file = new File("datfile"); 
                          FileWriter fw = new FileWriter(file.getAbsoluteFile());
                          BufferedWriter bw = new BufferedWriter(fw);
                          bw.write("");

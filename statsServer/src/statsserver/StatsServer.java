@@ -52,7 +52,7 @@ public class StatsServer {
         if(a.equals("istek 1")){
 
         System.out.println("Karakter sayisi gonderildi.\n");
-        int sayi = new File("/home/samp/HKDeathMatch/scriptfiles/SFCRRPG").listFiles().length;
+        int sayi = new File("folder").listFiles().length;
         outputClient.writeUTF(String.valueOf(sayi));
         
         }
